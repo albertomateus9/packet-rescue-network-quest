@@ -1,0 +1,37 @@
+{
+  "code": "L-02",
+  "title": "Packet Rescue Network Quest",
+  "notice": "Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.",
+  "missions": [
+    {
+      "id": "arp",
+      "title": "Find The Local Link ID",
+      "duration": 6,
+      "points": 10,
+      "story": "The packet starts in a lab computer but needs the next hop before leaving the local network.",
+      "challenge": "Explain why local link resolution happens before the first frame is sent.",
+      "hint": "Think about what information is needed at layer 2.",
+      "deliverable": "One ARP explanation and one risk if the answer is wrong."
+    },
+    {
+      "id": "dns",
+      "title": "Decode The Destination",
+      "duration": 7,
+      "points": 15,
+      "story": "The user typed a domain name. The packet cannot move until the destination becomes routable.",
+      "challenge": "Order the DNS, TCP, and HTTP steps correctly.",
+      "hint": "Application names become routable targets before the connection can start.",
+      "deliverable": "Ordered protocol chain."
+    },
+    {
+      "id": "latency",
+      "title": "Rescue From Congestion",
+      "duration": 8,
+      "points": 20,
+      "story": "Latency spikes appear between the lab and the service dashboard.",
+      "challenge": "Choose whether the likely cause is DNS, link congestion, or server failure using the clues.",
+      "hint": "If name lookup works but response is slow, focus after DNS.",
+      "deliverable": "Diagnosis and mitigation."
+    }
+  ]
+}
