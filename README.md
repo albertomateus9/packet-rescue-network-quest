@@ -1,78 +1,39 @@
-# Packet Rescue Network Quest
+# Resgate do Pacote: Missão de Redes
 
-Network mission game where teams move a packet through ARP, DNS, TCP, HTTP, latency and simulated failures.
+Jogo de redes em que equipes conduzem um pacote por ARP, DNS, TCP, HTTP, latência e falhas simuladas.
 
-> Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.
+> Projeto educacional inspirado na EETEPA Vilhena Alves. Não é sistema oficial institucional e não usa dados reais de estudantes.
 
-## Overview
+## Visão Geral
 
-**Code:** L-02  
-**Discipline focus:** Computer Networks and Web Technologies  
-**Format:** Teacher-led classroom web game  
-**Suggested duration:** 25 to 35 minutes  
-**Public demo:** https://albertomateus9.github.io/packet-rescue-network-quest/
-
-This project turns a technical lesson into a guided mission. The teacher creates fictional teams, starts a timer, reveals mission phases, scores evidence and exports a classroom report.
-
-## Classroom Flow
-
-- **Find The Local Link ID:** Explain why local link resolution happens before the first frame is sent.
-- **Decode The Destination:** Order the DNS, TCP, and HTTP steps correctly.
-- **Rescue From Congestion:** Choose whether the likely cause is DNS, link congestion, or server failure using the clues.
-
-## Competencies
-
-- network reasoning
-- protocol sequencing
-- incident diagnosis
-- technical vocabulary
-
-## Run Locally
-
-Open `index.html` directly or serve the folder:
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## Data Policy
-
-- Uses synthetic missions and fictional teams only.
-- Stores state only in browser `localStorage`.
-- Has no login, backend, external API or real student record.
-
----
-
-# Packet Rescue Network Quest
-
-Network mission game where teams move a packet through ARP, DNS, TCP, HTTP, latency and simulated failures.
-
-> Projeto educacional inspirado na EETEPA Vilhena Alves. Nao e sistema oficial institucional e nao usa dados reais de estudantes.
-
-## Visao Geral
-
-**Codigo:** L-02  
+**Código:** L-02  
 **Foco disciplinar:** Redes de Computadores e Tecnologias Web  
 **Formato:** jogo web conduzido pelo professor  
 **Tempo sugerido:** 25 a 35 minutos  
-**Demo publica:** https://albertomateus9.github.io/packet-rescue-network-quest/
+**Demonstração pública:** https://albertomateus9.github.io/packet-rescue-network-quest/
 
-Este projeto transforma uma aula tecnica em uma missao guiada. O professor cria equipes ficticias, inicia cronometro, revela fases, pontua evidencias e exporta um relatorio da aula.
+Este projeto transforma uma aula técnica em uma missão guiada. O professor cria equipes fictícias, inicia o cronômetro, revela fases, pontua evidências e exporta relatório da aula.
 
-## Dinamica De Aula
+## Roteiro Do Professor
 
-- **Find The Local Link ID:** Explain why local link resolution happens before the first frame is sent.
-- **Decode The Destination:** Order the DNS, TCP, and HTTP steps correctly.
-- **Rescue From Congestion:** Choose whether the likely cause is DNS, link congestion, or server failure using the clues.
+- **Objetivo:** Fazer a turma explicar o caminho de um pacote usando pistas e decisões por equipe.
+- **Preparação:** Revise rapidamente ARP, DNS, TCP e HTTP antes da rodada.
+- **Condução:** A cada fase, peça que a equipe diga qual camada está atuando e qual risco existe.
+- **Fechamento:** Compare os caminhos escolhidos e destaque como pequenos erros afetam todo o fluxo.
+- **Critérios:** use a rubrica do app para pontuar evidência, colaboração, comunicação e melhoria.
 
-## Competencias
+## Missões
 
-- network reasoning
-- protocol sequencing
-- incident diagnosis
-- technical vocabulary
+- **Encontrar o Próximo Salto (6 min):** Explicar por que a resolução local acontece antes do primeiro quadro ser enviado. Evidência: Uma explicação sobre ARP e um risco caso a resposta esteja errada.
+- **Decifrar o Destino (7 min):** Ordenar corretamente as etapas DNS, TCP e HTTP. Evidência: Cadeia de protocolos ordenada.
+- **Escapar do Congestionamento (8 min):** Escolher se a causa provável é DNS, congestionamento de enlace ou falha no servidor usando as pistas. Evidência: Diagnóstico e ação de mitigação.
+
+## Competências
+
+- raciocínio de redes
+- sequência de protocolos
+- diagnóstico de incidentes
+- vocabulário técnico
 
 ## Como Rodar
 
@@ -84,12 +45,12 @@ python -m http.server 8000
 
 Depois abra `http://localhost:8000`.
 
-## Politica De Dados
+## Política De Dados
 
-- Usa apenas missoes sinteticas e equipes ficticias.
+- Usa apenas missões sintéticas e equipes fictícias.
 - Guarda estado apenas no `localStorage` do navegador.
-- Nao possui login, backend, API externa ou registro real de estudante.
+- Não possui login, servidor, API externa ou registro real de estudante.
 
-## License
+## Licença
 
-MIT. See [LICENSE](LICENSE).
+MIT. Consulte [LICENSE](LICENSE).

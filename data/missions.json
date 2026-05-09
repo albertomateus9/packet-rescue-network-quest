@@ -1,37 +1,41 @@
 {
   "code": "L-02",
-  "title": "Packet Rescue Network Quest",
-  "notice": "Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.",
+  "title": "Resgate do Pacote: Missão de Redes",
+  "notice": "Projeto educacional inspirado na EETEPA Vilhena Alves. Não é sistema oficial institucional e não usa dados reais de estudantes.",
+  "dataPolicy": "Sem login, sem servidor, sem APIs externas e com dados salvos apenas no localStorage do navegador.",
   "missions": [
     {
       "id": "arp",
-      "title": "Find The Local Link ID",
+      "title": "Encontrar o Próximo Salto",
       "duration": 6,
       "points": 10,
-      "story": "The packet starts in a lab computer but needs the next hop before leaving the local network.",
-      "challenge": "Explain why local link resolution happens before the first frame is sent.",
-      "hint": "Think about what information is needed at layer 2.",
-      "deliverable": "One ARP explanation and one risk if the answer is wrong."
+      "story": "O pacote nasce em um computador do laboratório, mas precisa descobrir o próximo salto antes de sair da rede local.",
+      "challenge": "Explicar por que a resolução local acontece antes do primeiro quadro ser enviado.",
+      "hint": "Pense nas informações necessárias na camada 2.",
+      "deliverable": "Uma explicação sobre ARP e um risco caso a resposta esteja errada.",
+      "criterion": "Pontue quando a equipe conectar identificador lógico, enlace local e próximo salto."
     },
     {
       "id": "dns",
-      "title": "Decode The Destination",
+      "title": "Decifrar o Destino",
       "duration": 7,
       "points": 15,
-      "story": "The user typed a domain name. The packet cannot move until the destination becomes routable.",
-      "challenge": "Order the DNS, TCP, and HTTP steps correctly.",
-      "hint": "Application names become routable targets before the connection can start.",
-      "deliverable": "Ordered protocol chain."
+      "story": "O usuário digitou um domínio. O pacote só segue quando o destino vira um alvo roteável.",
+      "challenge": "Ordenar corretamente as etapas DNS, TCP e HTTP.",
+      "hint": "O nome da aplicação precisa virar destino antes da conexão iniciar.",
+      "deliverable": "Cadeia de protocolos ordenada.",
+      "criterion": "Pontue sequência correta e explicação do papel de cada protocolo."
     },
     {
-      "id": "latency",
-      "title": "Rescue From Congestion",
+      "id": "latencia",
+      "title": "Escapar do Congestionamento",
       "duration": 8,
       "points": 20,
-      "story": "Latency spikes appear between the lab and the service dashboard.",
-      "challenge": "Choose whether the likely cause is DNS, link congestion, or server failure using the clues.",
-      "hint": "If name lookup works but response is slow, focus after DNS.",
-      "deliverable": "Diagnosis and mitigation."
+      "story": "Picos de latência aparecem entre o laboratório e o painel de serviço.",
+      "challenge": "Escolher se a causa provável é DNS, congestionamento de enlace ou falha no servidor usando as pistas.",
+      "hint": "Se a resolução de nome funciona, mas a resposta é lenta, investigue depois do DNS.",
+      "deliverable": "Diagnóstico e ação de mitigação.",
+      "criterion": "Pontue diagnóstico coerente com as pistas e mitigação segura."
     }
   ]
 }
