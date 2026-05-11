@@ -1,6 +1,15 @@
 {
   "code": "L-02",
   "title": "Resgate do Pacote: Missão de Redes",
+  "fantasy": "Resgate de um pacote atravessando enlaces, protocolos e gargalos até chegar ao serviço.",
+  "playerVerb": "liberar portões de protocolo",
+  "mechanic": {
+    "title": "Mecânica da rodada",
+    "prompt": "A equipe só avança o pacote quando explica o protocolo correto e identifica o risco da fase.",
+    "reward": "Pacote liberado"
+  },
+  "teacherPrompt": "Use o caminho do pacote como trilha: cada equipe precisa abrir o próximo portão com uma justificativa.",
+  "rewardLabel": "Portões liberados",
   "notice": "Projeto educacional inspirado na EETEPA Vilhena Alves. Não é sistema oficial institucional e não usa dados reais de estudantes.",
   "dataPolicy": "Sem login, sem servidor, sem APIs externas e com dados salvos apenas no localStorage do navegador.",
   "missions": [

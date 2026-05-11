@@ -7,13 +7,14 @@
   <meta name="description" content="Jogo de redes em que equipes conduzem um pacote por ARP, DNS, TCP, HTTP, latência e falhas simuladas.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="game game-packet layout-route">
   <header class="app-header">
     <div class="brand">
       <span class="brand-mark">L-02</span>
       <div>
         <h1>Resgate do Pacote: Missão de Redes</h1>
         <p>Conduza um pacote pela pilha de rede da sala até o serviço final.</p>
+        <p class="fantasy-line">Resgate de um pacote atravessando enlaces, protocolos e gargalos até chegar ao serviço.</p>
       </div>
     </div>
     <nav aria-label="Atalhos do professor">
@@ -27,15 +28,24 @@
     <section class="stage" id="missao">
       <div class="stage-toolbar">
         <div>
-          <span class="status-pill">Missão conduzida pelo professor</span>
+          <span class="status-pill">Rota do pacote</span>
           <h2 id="phaseTitle">Carregando missão</h2>
+          <p class="verb-line">Ação da turma: <strong>liberar portões de protocolo</strong></p>
         </div>
         <div class="timer" aria-live="polite">
           <span id="timerValue">00:00</span>
           <small id="timerLabel">pronto</small>
         </div>
       </div>
-      <canvas id="gameCanvas" width="960" height="540" aria-label="Mapa visual da missão"></canvas>
+      <div class="arena-frame">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="Mapa visual da missão"></canvas>
+        <div class="hud-strip" aria-label="HUD da missão">
+          <span>Pacote em trânsito</span>
+          <span>Latência observada</span>
+          <span>Portões liberados</span>
+        </div>
+        <div id="phaseRail" class="phase-rail"></div>
+      </div>
       <div class="mission-card">
         <p id="phaseStory"></p>
         <h3>Desafio</h3>
@@ -46,6 +56,11 @@
         </details>
         <p class="deliverable"><strong>Evidência esperada:</strong> <span id="phaseDeliverable"></span></p>
         <p class="criterion"><strong>Critério de pontuação:</strong> <span id="phaseCriterion"></span></p>
+      </div>
+      <div class="mechanic-panel">
+        <strong>Mecânica da rodada</strong>
+        <p>A equipe só avança o pacote quando explica o protocolo correto e identifica o risco da fase.</p>
+        <span>Pacote liberado</span>
       </div>
       <div class="controls">
         <button id="prevPhase" type="button">Fase anterior</button>

@@ -12,7 +12,15 @@ Jogo de redes em que equipes conduzem um pacote por ARP, DNS, TCP, HTTP, latênc
 **Tempo sugerido:** 25 a 35 minutos  
 **Demonstração pública:** https://albertomateus9.github.io/packet-rescue-network-quest/
 
-Este projeto transforma uma aula técnica em uma missão guiada. O professor cria equipes fictícias, inicia o cronômetro, revela fases, pontua evidências e exporta relatório da aula.
+Este projeto transforma uma aula técnica em uma experiência de jogo educacional. A fantasia central é: Resgate de um pacote atravessando enlaces, protocolos e gargalos até chegar ao serviço.
+
+## Como Conduzir A Dinâmica
+
+- **Verbo de jogo:** liberar portões de protocolo.
+- **Mecânica:** A equipe só avança o pacote quando explica o protocolo correto e identifica o risco da fase.
+- **Papel da equipe:** Use o caminho do pacote como trilha: cada equipe precisa abrir o próximo portão com uma justificativa.
+- **Recompensa da rodada:** Pacote liberado.
+- **Registro final:** exporte o relatório para guardar pontuação, evidências e próximos passos.
 
 ## Roteiro Do Professor
 
